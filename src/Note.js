@@ -1,11 +1,14 @@
-export const Note = ({ title, body})=>{
-    return (
+export const Note = ({ content, date, important})=>{
+  const importante = important.toString() 
+  return (
       <li>
-      <p>{title}</p>
-  
+      <p>{content}</p>
+      
       <small>
-       {body}
+       {date}
       </small>
+
+      <p>Important: {importante}</p>
       
     </li>
     )

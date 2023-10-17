@@ -25,9 +25,9 @@ function App() {
 
     const noteToAddState = {
       
-      title: newNote,
-      body: newNote,
-      userId: 1
+      content: newNote,
+      date: new Date().toISOString(),
+ 
     };
 
     createNotes(noteToAddState)
