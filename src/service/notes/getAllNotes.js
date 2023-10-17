@@ -1,7 +1,7 @@
 import axios from "axios"
-
+import URL from './urlBase'
 export const getAllNotes = () =>{
-    return axios("https://jsonplaceholder.typicode.com/posts",)
+    return axios(URL)
     .then(response => {
       const {data} = response
       return data
